@@ -49,5 +49,8 @@ I've already mentioned the laptop-hosted scripts/workflows, but here they are ag
 
 KNOWN ISSUES:
 1. Finder "on add" events are a bit flaky.  If you only add one file at a time, then it works really nicely.  If on the hand you add 50 files all together, it has a habit of not catching them all.  I've not coded for this issue (yet) but it can be avoided by a) Not adding 50 receipts all in one go, b) if you do, keep an eye on the results.  Mostly this happens if you scan a backlog of receipts whilst your laptop is switched off - when it comes back online it will sync and suddenly find those 50 new rceipts.  If you simply must do a batch, you can avoid the issue by leaving your Mac on and running.
+2. Only handles "Subsistence" type claims: dropdown hardcoded so does not use value from spreadsheet.
+3. Hard coded expense delivery engagement activity.  Maybe prompt for this when the final script runs (and prompts anyway to ask if Kimble is signed-in)
+4. I am not entirely sure the PDFs are uploading correctly, or if it is just some rubbish going on generally in Kimble.  Kimble expense preview doesn't seem to work like it once did.
 
 
