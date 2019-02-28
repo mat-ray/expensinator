@@ -44,6 +44,9 @@ I've already mentioned the laptop-hosted scripts/workflows, but here they are ag
 	4.3 "Create Kimble Expense.workflow (Folder Action)".  This script is triggered when the .csv file in the preceding step is moved into the folder "Upload to Kimble". First off it gets all the receipts ready to move and combines them into one pdf, then it prompts you to open a Kimble window in Safari, and log in.  It'll hold at this point until you acknowledge, or abort if you cancel. It will then open up a new expense claim form in Kimble, and start to populate it with all the entries, and upload the single combined PDF created earlier.  Once it is done it will save, but NOT submit the form.  You could script it to do this, but that would be a bit reckless, because ultimately, these kinds of scripts do sometimes fail, and you should also check for duplicates - which this script does not.  The last thing this script does is to Curl to the Google sheet a new row which is null with the exception of the doc_type which is set to "EndOfClaim".  
 	4.4 "Daily stalled receipts notifier.app (Calendar Alarm).  I added this calendar triggered script, attached to a daily calendar item (weekdays only), to check the receipts folder for any receipts that have been stuck there.  If there are any, it adds a system notification, and then reveals the offending items in a Finder window.
 
+
+	
+
 [TO-DO - add a Google sheets script to the sheet to watch out for the "EndOfClaim" row being added, and when that happens it should rename the current sheet from "Sheet1" to "ArchiveYYYYMMDD", and then create a new sheet called "Sheet1".
 
 
