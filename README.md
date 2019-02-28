@@ -46,8 +46,7 @@ I've already mentioned the laptop-hosted scripts/workflows, but here they are ag
 
 
 	
-
-[TO-DO - add a Google sheets script to the sheet to watch out for the "EndOfClaim" row being added, and when that happens it should rename the current sheet from "Sheet1" to "ArchiveYYYYMMDD", and then create a new sheet called "Sheet1".
+TO-DO - add a Google sheets script to the sheet to watch out for the "EndOfClaim" row being added, and when that happens it should rename the current sheet from "Sheet1" to "ArchiveYYYYMMDD", and then create a new sheet called "Sheet1".
 
 
 
